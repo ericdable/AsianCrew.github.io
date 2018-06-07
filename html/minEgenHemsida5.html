@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Min Egen Hemsida</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/minEgenHemsida5.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtqjVQQvr7xA8W4AULny8XbXzGqZkUx-4&callback=initMap" async defer></script>
+			
+			<!-- Kartans koordinater -->
+	<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 41.881832, lng:  -87.623177},
+          zoom: 15
+        });
+      }
+    </script>
+  <script src="../js/minEgenHemsida5.js"></script>
+  </head>
+
+<body>
+	<!--Header-->
+<section class="header">
+	 <div class="button_container" id="toggle">
+		<span class="top"></span>
+		<span class="middle"></span>
+		<span class="bottom"></span>
+	</div>
+	
+	<a class="navbar-brand1" href="index.html"><img src="../img/intel-logo.png" width="60" height="40" class="d-inline-block align-top" alt="intel-logo"></a>
+
+	
+    <div class="overlay" id="overlay">
+		<nav class="overlay-menu navbar navbar-expand-lg" id="mainNav">
+			<div class="navbar-collapse menu">
+				<ul class="navbar-nav ml-auto">
+					<li><a class="navbar-brand" href="index.html"><img src="../img/intel-logo.png" width="60" height="40" class="d-inline-block align-top" alt="intel-logo"></a></li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="min2.html"><span class="nav-element">Management</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="minEgenHemsida3.html"><span class="nav-element">About</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="minEgenHemsida4.html"><span class="nav-element">Portofolio</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="minEgenHemsida5.html"><span class="nav-element">Contact</span></a>
+					</li> 
+				</ul>
+			</div>
+		</nav>
+    </div>
+	</section>
+	
+		<!--Bakgrundsbild-->
+	<section>
+		<div class="contact-picture"></div>
+	</section>
+	
+		<!--Panel frågor-->
+	<section>
+		<!--F.A.Q-->
+		<div class="frequently-asked-questions">F.A.Q</div>
+		<div class="container">
+		<!--Panel-->
+		<div class="panel">
+			<div class="hero-title text-center">GENERELLA FRÅGOR</div>
+			<div class="under-hero-title text-center">FREKVENTA FRÅGADE FRÅGOR</div>
+			<div class="row panel-wrapper">
+				<div class="col-lg-6">
+					<div class="panel-title">FRÅGOR GRUPP 1</div>
+					<div class="panel-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore facilis voluptas ipsam iure vero similique consectetur error.</div>
+						<div id="accordion1" class="accordion">
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<div class="">
+										<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											EXEMPEL FRÅGA??
+										</button>
+									</div>
+								</div>
+								<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.									
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingTwo">
+									<div class="">
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											EXEMPEL FRÅGA??
+										</button>
+									</div>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingThree">
+									<div class="">
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											EXEMPEL FRÅGA??
+										</button>
+									</div>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingFour">
+									<div class="">
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+											EXEMPEL FRÅGA??
+										</button>
+									</div>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion1">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+						<div class="panel-hr"><hr></div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="panel-title panel-title-2">FRÅGOR GRUPP 2</div>
+					<div class="panel-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, blanditiis corrupti ea optio veniam, reiciendis, quidem iste quae.</div>
+					
+						<div id="accordion2" class="accordion">
+							<div class="card">
+								<div class="card-header" id="headingFive">
+									<div class="">
+										<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+											EXEMPEL FRÅGA??
+										</button>
+									</div>
+								</div>
+								<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion2">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingSix">
+									<div class="">
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+											EXEMPEL FRÅGA??
+										</button>
+									</div>
+								</div>
+								<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion2">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingSeven">
+									<div class="">
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+											EXEMPEL FRÅGA??
+										</button>
+									</div>
+								</div>
+								<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion2">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingEight">
+									<div class="">
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+											EXEMPEL FRÅGA??
+										</button>
+									</div>
+								</div>
+								<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion2">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class="panel-hr"><hr></div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<!-- Kort -->
+	<section>
+		<div class="container card-fact">
+			<div class="card-fact-title text-center">MÖT TEAMET</div>
+			<div class="card-fact-sub-title text-center">VI ÄR KREATIVA PROFFS</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-12">
+					<div class="image-information-column" id="image-information-column">
+					<!-- Image -->
+					<div class="image-section">
+						<img src="../img/team-1.jpg" alt="Team Member" class="img-responsive">
+						<div class="card-description-wrapper top">
+							<div class="card-description">
+								<div class="card-description-title">HELLO!</div>
+								<div class="card-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+								<div class="hr"><hr></div>
+							</div>
+						</div>
+					</div>
+				
+					<!-- Info -->
+					<div class="information-section">
+						<div class="information-wrapper">
+							<div class="information-name">PHILIP LEE</div>
+								<div class="information-profession">CEO & GRUNDARE</div>
+								<ul class="information-social-links">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								</ul>						
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="col-lg-4 col-12">	
+				<div class="image-information-column">
+					<!-- Image -->
+					<div class="image-section">
+						<img src="../img/team-2.jpg" alt="Team Member" class="img-responsive">
+						<div class="card-description-wrapper top">
+							<div class="card-description">
+								<div class="card-description-title">HELLO!</div>
+								<div class="card-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+								<div class="hr"><hr></div>
+							</div>
+						</div>
+					</div>
+				
+					<!-- Info -->
+					<div class="information-section">
+						<div class="information-wrapper">
+							<div class="information-name">CAROL GREENE</div>
+								<div class="information-profession">KONST DIREKTOR</div>
+								<ul class="information-social-links">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								</ul>						
+						</div>
+					</div>
+				</div>
+				</div>
+				
+				<div class="col-lg-4 col-12">
+				<div class="image-information-column">
+					<!-- Image -->
+					<div class="image-section">
+						<img src="../img/team-3.jpg" alt="Team Member" class="img-responsive">
+						<div class="card-description-wrapper top">
+							<div class="card-description">
+								<div class="card-description-title">HELLO!</div>
+								<div class="card-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+								<div class="hr"><hr></div>
+							</div>
+						</div>
+					</div>
+				
+					<!-- Info -->
+					<div class="information-section">
+						<div class="information-wrapper">
+							<div class="information-name">TYLOR OWENS</div>
+								<div class="information-profession">DESIGNLEDARE</div>
+								<ul class="information-social-links">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								</ul>						
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Karta -->
+	<section class="map">
+	
+	<div class="map-title text-center"> SÄG HEJ</div>
+	<div class="map-sub-title text-center">VI ÄLSKAR ATT DISKUTERA IDEÉR</div>
+	
+	<div class="show-info-link" id="show-info-link">
+        <a class="show-info"><i class="fa fa-info"></i><span class="">VISA INFO</span></a>
+    </div>
+	
+	<div class="map-wrapper">
+		<div class="map-box" id="map-box">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="map-column-title">TELEFON</div>
+					<ul class="map-column-text">
+						<li><a href="">+ 123 4567 890</a></li>
+						<li><a href="">+ 123 4567 890</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<div class="map-column-title">ADDRESS</div>
+					<ul class="map-column-text">
+						<li>1200 SOME STREET, IL, US</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="map-column-title">EMAIL</div>
+					<ul class="map-column-text">
+						<li>SAYHELLO@EMAIL.COM</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<div class="map-column-title">ÖPPETIDER</div>
+					<ul class="map-column-text">
+						<li>MON-FRI: 9AM-5PM</li>
+						<li>SAT: 10AM-1PM</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row show-map-link">
+				<div class="col-sm-12">
+					<a class="show-map" id="show-map"><span class="icon-map-pin"></span>VISA KARTAN</a>
+				</div>
+			</div>
+		</div>
+		<div id="map"></div>
+	</div>
+	</section>
+	
+		<!--Formulär-->
+	<section>
+		<div class="container form-input-container">
+			<div class="row">
+				<div class="col-lg-6 form-group" data-wow-duration="1s">
+					<!-- Name -->
+					<div class="form-group">
+						<input type="text" name="name" id="name-contact" class="form-control validate-locally" placeholder="Skriv in ditt namn">
+						<label for="name-contact">Namn</label>
+						<span class="pull-right alert-error"></span>
+					</div>
+					
+					<!-- Email -->
+					<div class="form-group">
+						<input type="email" name="email" id="email-contact" class="form-control validate-locally" placeholder="Fyll i ditt email">
+						<label for="email-contact">Email</label>
+						<span class="pull-right alert-error"></span>
+					</div>
+                </div>
+				  
+				<div class="col-lg-6 form-group" data-wow-duration="1s">
+					<!-- Message -->
+					<div class="form-group">
+						<textarea name="message" id="message-contact" class="form-control" rows="5" placeholder="Ditt meddelande"></textarea>
+						<label for="message-contact">Meddelande</label>
+					</div>
+					<div class="submit-btn">
+						<input type="submit" class="btn pull-right" value="Skicka meddelande">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+		<!--Footern-->
+	<section class="footer">
+		<div class="container-fluid footer-body">
+			<div class="row">
+				<ul class="footer-column footer-logo">
+					<li class="footer-title">Logo</li>
+						<li class="footer-text">4 Bis de la pyramide <br> 92100, Stamford Bridge, Spain</li>
+						<li class="footer-text">+33 (0)99 73 87 23 10 <br> <a href="#">info@transport-information.net</a></li>
+				</ul>
+				<ul class="footer-column footer-link">
+					<li class="footer-title">Products</li>
+						<li class="footer-text"><a href="#">Abow</a></li>
+						<li class="footer-text"><a href="#">AboShop</a></li>
+						<li class="footer-text"><a href="#">Cabo</a></li>
+						<li class="footer-text"><a href="#">1-Abo</a></li>
+				</ul>
+				<ul class="footer-column footer-link">
+					<li class="footer-title">Resources</li>
+						<li class="footer-text"><a href="#">Montrogue</a></li>
+						<li class="footer-text"><a href="#">Gestri</a></li>
+						<li class="footer-text"><a href="#">Adres</a></li>
+						<li class="footer-text"><a href="#">Bologne</a></li>
+				</ul>
+				<ul class="footer-column footer-link">
+					<li class="footer-title">Company</li>
+						<li class="footer-text"><a href="#">About us</a></li>
+						<li class="footer-text"><a href="#">Careers</a></li>
+						<li class="footer-text"><a href="#">Sign in</a></li>
+						<li class="footer-text"><a href="#">Contact us</a></li>
+				</ul>
+			</div>
+		<hr>
+		
+		<div class="footer-bottom">
+			<div>
+				© Copyright 2017 - All Rights Reserved
+				<br>
+				<div>
+					<a>Privacy</a>
+					<a>Terms</a>
+					<a>Startup</a>
+				</div>
+			</div>
+			<div>
+				<i class="fa fa-facebook-official" aria-hidden="true"></i>
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-flickr" aria-hidden="true"></i>
+				<i class="fa fa-google" aria-hidden="true"></i>
+			</div>
+		</div>
+
+		</div>
+	</section>
+
+	<script>
+
+
+</script>
+
+</body>
+</html>

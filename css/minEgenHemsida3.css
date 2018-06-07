@@ -1,0 +1,987 @@
+			body{
+				font-family: arial;
+			}
+			.header {
+				width: 100%;
+				position: fixed;
+				z-index: 1000;
+				transition: 0.2s ease;  
+			}
+			/* Navbar!
+			=================== */
+			.navbar-brand:hover{
+				opacity: 0.65;
+			}
+			
+			/* 
+			============*/
+			
+			/* Background
+			==================*/
+			.background-cover{
+				background-image: url(../img/about-background.jpg);
+				background-size: cover;
+				background-position: center;	
+				height: 100vh; 
+				background-repeat:no-repeat;
+				background-position: 50% 50%;
+				z-index:-100;
+			}
+			/* Scroll button
+			==================*/
+			
+			#scrollButton a span {
+				position: absolute;
+				top: 90vh;
+				left: 50%;
+				width: 30px;
+				height: 50px;
+				border: 2px solid #fff;
+				border-radius: 50px;
+				box-sizing: border-box;
+				margin-right: -50%;
+				transform: translate(-50%, -50%)
+			}
+			#scrollButton a span::before {
+				position: absolute;
+				top: 10px;
+				left: 50%;
+				content: '';
+				width: 6px;
+				height: 6px;
+				margin-left: -3px;
+				background-color: #fff;
+				border-radius: 100%;
+				-webkit-animation: sdb10 2s infinite;
+				animation: sdb10 2s infinite;
+				box-sizing: border-box;
+			}
+			@-webkit-keyframes sdb10 {
+				0% {
+				-webkit-transform: translate(0, 0);
+				opacity: 0;
+			}
+			40% {
+				opacity: 1;
+			}
+			80% {
+				-webkit-transform: translate(0, 20px);
+				opacity: 0;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+			@keyframes sdb10 {
+				0% {
+					transform: translate(0, 0);
+					opacity: 0;
+				}
+			40% {
+				opacity: 1;
+				}
+			80% {
+				transform: translate(0, 20px);
+				opacity: 0;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+			/* About-our-history
+			=================*/
+			.about-our-history-title{
+				font-weight: 600;
+				letter-spacing: 4px;
+				font-size: 1.2rem;
+				font-family: ;
+			}
+			.about-our-history-under-title {
+				letter-spacing: 4px;
+				color: #999;
+			}
+			.about-our-history-text blockquote{
+				font-size: 1.1rem;
+			}
+			.about-our-history-text{
+				color: #444;
+				letter-spacing: 2px;
+				line-height: 1.65;
+				font-size: 0.95rem;
+			}
+			/*History showcase
+			====================*/
+			.history-showcase{
+				
+			}
+			.history-showcase .history-showcase-img {
+				min-height: 36rem;
+				background-size: cover;
+			}
+			.history-showcase-wrapper{
+				background-color: #202127;
+			}
+			.history-showcase .header-logo{
+				width:4rem;
+				height:4rem;
+			}
+			.header-wrapper{
+				display:flex;			
+				}
+			.header-title{
+				padding: 0.35rem 0.7rem 0.7rem 0.9rem;
+			}
+			.header-title .header-title-first{
+				color: #0cabe5;
+				font-weight: 550;
+				letter-spacing: 4px;
+			}
+			.header-title .header-title-second{
+				color: #f1f1f1;
+				display:block;
+				font-weight: 600;
+				letter-spacing: 4px;
+			}
+			.history-showcase .text-wrapper{
+				color: #f1f1f1;
+			}
+			.text-wrapper .history-text{
+				letter-spacing: 1px;
+				line-height: 2;
+			}
+			.list-wrapper ul{
+				list-style-type: none;
+				color: white;
+				padding:0;
+				margin:0;
+			}
+			.list-wrapper ul li{
+				font-weight: 500;
+				color: #f1f1f1;
+			}
+			.list-wrapper ul li:before{
+				content:"\203A";				
+				color: white;
+				padding-right: 1rem;
+			}
+			
+			/*Icon section
+			=================*/
+			.icon-section .icon-wrapper{
+				display: flex;
+			}
+			.icon-wrapper i{
+				color:white;
+				background: #0cabe5;
+				border-radius: 50% 50%;
+				padding: 24px 26px;
+				width:;
+				height:80px;
+				transition: ease-in transform 0.4s;
+				 -webkit-transition: ease-in transform 0.25s;
+				}
+			.icon-wrapper:hover .fa-icon{
+				border-radius: 50%;
+				box-shadow: 0px 0px 2px #888;
+				color: black;
+				background: white;
+				transform: rotateY( 360deg );
+			}
+			.icon-second-paragraph{
+				padding: 4rem 0 14rem 0;
+			}
+			
+			/* Clients say
+			=====================*/
+			.clients-say-container{
+				background-color: #3c3c3c;
+				padding-bottom: 9rem;
+			}
+			.clients-say-container .clients-say-head-title{
+				color: #cecece;
+			}
+			.clients-say-container .clients-say-row-wrapper{
+				max-width: 85vw;
+				margin: 0 auto;
+			}
+			.clients-say-container .clients-say-person{
+				color: #cecece;
+			}
+			.clients-say-container .clients-say-profession{
+				color: #888;
+				float: right;
+			}
+			.clients-say-wrapper hr{
+				    border: 0;
+					height: 1px;
+					background: #888;
+			}
+			.clients-say-container .clients-say-text{
+				color: #cecece;
+			}
+			
+			/* Geometric Background
+			==================*/
+			.geometric-background{
+				background-image: url(../img/geometric-background.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;	
+				height: 60vh; 
+			}
+			.geometric-background-wrapper{
+				text-align: center;
+				padding: 25vh 0;
+			}
+			.geometric-background-title{
+				color: #ececec;
+				font-size: 1.2rem;
+				letter-spacing: 4px;		
+				padding-bottom: 5vh;
+			}
+			.geometric-background-button{
+				display: inline-block;
+				border-radius: 0.5px;
+				background-color: #ececec;
+				border: none;
+				color: black;
+				text-align: center;
+				font-size: 1rem;
+				padding: 10px;
+				width: 250px;
+				transition: all 0.4s;
+				cursor: pointer;
+				font-weight: 600;
+			}
+
+			.geometric-background-button span {
+				cursor: pointer;
+				display: inline-block;
+				position: relative;
+				transition: 0.5s;
+			}
+
+			.geometric-background-button span:after {
+				content: '\00bb';
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: -20px;
+				transition: 0.5s;
+			}
+
+			.geometric-background-button:hover span {
+				padding-right: 25px;
+			}
+
+			.geometric-background-button:hover span:after {
+				opacity: 0.8;
+				right: 0;
+			}
+			/* Footern!
+			=================== */
+			.footer-body{
+				background-color:#323232;
+			}
+			.footer-body a{
+				text-decoration: none;
+				color: #d4d4d4;
+				cursor: pointer;
+			}
+			.footer-body a:hover{
+				opacity: 0.6;
+			}
+			.footer-column{
+				list-style-type: none;
+			}
+			.footer-title {
+				color: white;
+				font-weight: 600;
+			}
+			.footer-text li{
+				list-style-type: none;
+				padding: 0;
+			}
+			.footer-text{
+				color: #d4d4d4;
+				line-height: 1.9;
+			}
+			.footer-bottom{
+				color:#d4d4d4;
+				text-align: center;
+				padding-bottom: 1rem;
+				line-height: 1.8;
+			}
+			.footer-body hr{
+				width: 75%;
+				display: block;
+				height: 1px;
+				border: 0;
+				border-top: 1px solid #d3d3d3;
+			}
+			.footer-bottom i:hover{
+				opacity: 0.6;
+				cursor: pointer;
+			}
+			
+			@media only screen and (min-width: 1440px){
+					/* About our history
+					==============*/
+					.about-our-history{
+						padding-bottom: 16rem;
+					}
+					.about-our-history-title{
+						padding: 12rem 0 0 0;
+						font-size: 1.5rem;
+						
+					}
+					.about-our-history-under-title {
+						padding:  1.8rem 0 6rem 0;
+						font-size: 1.2rem;
+					}
+					.about-our-history-text, .blockquote p, .blockquote-footer{
+						font-size: 1.25rem;
+					}
+					/* History showcase
+					==============*/
+					.history-showcase .history-showcase-img {
+						min-height: 44rem;
+						background-size: cover;
+					}
+				.history-showcase-text-part{
+					padding: 2rem;
+				}
+				.header-title .header-title-first{
+					font-size:1.3rem;
+				}
+				.header-title .header-title-second{
+					font-size: 1.6rem;
+ 				}
+				.text-wrapper{
+					padding: 1.2rem 0;
+					font-size: 1.2rem;
+				}
+				.list-wrapper ul li{
+					line-height: 2.4;
+					font-size: 1.1rem;
+					font-weight: 600;
+					letter-spacing: 0.5px;
+				}
+					/* Icon
+					===============*/
+					.icon-section-title{
+						font-size:1.6rem;
+						font-weight: 600;
+						letter-spacing: 6px;
+						padding:9rem 0 0 0;
+					}
+					.icon-section-sub-title{
+						color: #777;
+						padding: 1.8rem 0 0 0;
+						font-size: 0.9rem;
+						letter-spacing: 4px;
+						font-size: 1.3rem;
+					}
+					.icon-text-wrapper{
+						padding: 7rem 0 0 0;
+						}
+					.icon-text-paragraph{
+						padding: 0 0 0 1.2rem;
+					}
+					.icon-title{
+						font-weight: 600;
+						letter-spacing: 2px;
+						font-size: 1.3rem;
+					}
+					.icon-text{
+						padding: 0.7rem 0 0 0;	
+						color: #777;
+						letter-spacing: 1px;
+						font-size: 1.2rem;
+					}
+						
+						/* Clients say
+					===============*/
+					.clients-say-container .clients-say-head-title{
+						font-size: 2rem;
+						padding: 6rem 0 3rem 0;
+						letter-spacing: 2px;
+					}
+					.clients-say-container .clients-say-person{
+						letter-spacing: 1.5px;
+						font-size: 1.4rem;
+					}
+					.clients-say-container .clients-say-profession{
+						font-size: 1.3rem;
+					}
+					.clients-say-container .clients-say-text{
+						font-style: italic;
+						line-height: 1.7;
+						font-size: 1.25rem;
+						letter-spacing: 1px;
+					}
+									.footer-column{
+					margin: auto;
+					padding: 4rem 0 2rem 0;
+				}
+				.footer-title {
+					font-size: 1.4rem;
+				}
+				.footer-text{
+					font-size: 1.2rem;
+				}
+				.footer-bottom div div{
+					word-spacing: 1rem;
+				}
+				.footer-bottom-text{
+					font-size: 1.2rem;
+				}
+				.footer-bottom i{
+					font-size: 1.2rem;
+					margin:2px;
+				}
+			}
+			
+			@media only screen and (max-width: 1440px){
+					/* About our history
+					==============*/
+					.about-our-history{
+						padding-bottom: 16rem;
+					}
+					.about-our-history-title{
+						padding: 12rem 0 0 0;
+						
+					}
+					.about-our-history-under-title {
+						padding:  1.8rem 0 6rem 0;
+					}
+					/* History showcase
+					=============*/
+					.history-showcase-text-part{
+					padding: 0 2rem;
+				}
+				.header-title .header-title-first{
+					font-size:;
+				}
+				.header-title .header-title-second{
+					font-size: 1.4rem;
+ 				}
+				.text-wrapper{
+					padding: 1.2rem 0;
+				}
+				.list-wrapper ul li{
+					line-height: 2.4;
+					font-size: 0.9rem;
+					font-weight: 600;
+					letter-spacing: 0.5px;
+				}
+									/* Icon
+					===============*/
+					.icon-section-title{
+						font-size:1.2rem;
+						font-weight: 600;
+						letter-spacing: 6px;
+						padding:9rem 0 0 0;
+					}
+					.icon-section-sub-title{
+						color: #777;
+						padding: 1.8rem 0 0 0;
+						font-size: 0.9rem;
+						letter-spacing: 4px;
+					}
+					.icon-text-wrapper{
+						padding: 7rem 0 0 0;
+						}
+					.icon-text-paragraph{
+						padding: 0 0 0 2rem;
+					}
+					.icon-title{
+						font-weight: 600;
+						letter-spacing: 2px;
+					}
+					.icon-text{
+						padding: 1rem 0 0 0;	
+						color: #777;
+						letter-spacing: 1px;
+						font-size: 0.95rem;
+					}
+					/* Clients say
+					===============*/
+					.clients-say-container .clients-say-head-title{
+						font-size: 2rem;
+						padding: 6rem 0 3rem 0;
+						letter-spacing: 2px;
+					}
+					.clients-say-container .clients-say-person{
+						letter-spacing: 0.5px;
+					}
+					.clients-say-container .clients-say-profession{
+						font-size: 0.85rem;
+					}
+					.clients-say-container .clients-say-text{
+						font-style: italic;
+						line-height: 1.65;
+					}
+			}
+			
+			@media only screen and (min-width: 1024px){
+				.footer-column{
+					margin: auto;
+					padding: 4rem 0 2rem 0;
+				}
+				.footer-title {
+					font-size: 1.2rem;
+				}
+				.footer-bottom div div{
+					word-spacing: 1rem;
+				}
+				.footer-bottom i{
+					font-size: 1.2rem;
+					margin:2px;
+				}
+			}
+			@media only screen and (max-width:1024px){ 
+					.history-showcase .history-showcase-img {
+						min-height: 30rem;
+						background-size: cover;
+					}
+					.history-showcase .header-logo{
+						width:3.2rem;
+						height:3.2rem;
+					}
+					.history-showcase-text-part{
+						padding: 0 1.5rem;
+					}
+					.header-title{
+						padding: 0.2rem 0.4rem 0.4rem 0.8rem;
+					}
+					.header-title .header-title-first{
+						font-size:0.75rem;
+						letter-spacing: 1.2px;
+						font-weight: 550;
+					}
+					.header-title .header-title-second{
+						font-size: 0.9rem;
+					}
+					.text-wrapper{
+						padding: 1.2rem 0;
+					}
+					.text-wrapper .history-text{
+						font-size: 0.85rem;
+						line-height: 1.8;
+					}
+					.list-wrapper ul li:before{
+						padding-right: 0.7rem;
+					}
+					.list-wrapper ul li{
+						line-height: 2;
+						font-size: 0.7rem;
+						font-weight: 600;
+						letter-spacing: 0.5px;
+					}
+					.footer-column{
+						margin: auto;
+						padding: 4rem 0 2rem 0;
+					}
+					.footer-title {
+						font-size: 1.2rem;
+					}
+					.footer-bottom div div{
+						word-spacing: 0.6rem;
+					}
+					.footer-bottom i{
+						font-size: 1.2rem;
+						margin:2px;
+					}
+				}
+			@media only screen and (min-width:992px){
+					/* Navbar!
+					=================== */
+					.navbar-brand:hover{
+						opacity: 0.75;
+					}
+					.nav-element{
+						color:black;
+					}
+					.navbar-brand1{
+						display:none;
+					}
+					.nav-element:hover{
+						color:white;
+					}
+					.before:hover{
+						color: white !important;
+					}
+					.after:hover {
+						color:#0cabe5!important;
+					}
+					.navbar-brand{
+						position:fixed;
+						z-index: 1;
+						top: 0.3rem;
+						left: 0.6rem;
+					}
+					.menu ul li{
+						font-size: 1.2rem;
+						font-weight: 700;
+					}
+					.navbar{
+						background-color: transparent;
+					}
+					.navbar li a:hover{
+						border-bottom: 2px solid #d3d3d3;
+						padding-bottom:0.1rem;
+					}
+					
+			}
+			@media only screen and (max-width:992px){
+					.navbar-brand{
+						display:none;
+					}
+					.navbar-brand1{
+						position:fixed; 
+						top: 0.7rem;
+						left: 0.7rem;
+						z-index: 3;
+					}
+					.nav-element{
+						color:white!important;
+					}
+					.button_container {
+						position: fixed;
+						top: 1rem;
+						right: 1rem;
+						height: 27px;
+						width: 35px;
+						cursor: pointer;
+						z-index: 100;
+						transition: opacity .25s ease;
+					}
+					.nav-button-background-after{
+						background-color:white;
+						width: 100%;
+						height: 4rem;
+						position:fixed; 
+						z-index: 3;
+						top: 0;
+					}
+					.nav-button-background {
+						background-color:transparent;
+					}
+					.button_container:hover {
+						opacity: 0.7;
+					}
+					.button_container.active .top {
+						transform: translateY(11px) translateX(0) rotate(45deg);
+						background: #FFF;
+					}
+					.button_container.active .middle {
+						opacity: 0;
+						background: #FFF;
+					}
+					.button_container.active .bottom {
+						transform: translateY(-11px) translateX(0) rotate(-45deg);
+						background: #FFF;
+					}
+					.button_container span {
+						background: #0cabe5;
+						border: none;
+						height: 5px;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						transition: all .35s ease;
+						cursor: pointer;
+					}
+					.button_container span:nth-of-type(2) {
+						top: 11px;
+					}
+					.button_container span:nth-of-type(3) {
+						top: 22px;
+					}
+
+					.overlay {
+						position: fixed;
+						background: #0cabe5;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 0%;
+						opacity: 0;
+						visibility: hidden;
+						transition: opacity .35s, visibility .35s, height .35s;
+						overflow: hidden;
+						z-index:99;
+					}
+					.overlay.open {
+						opacity: 1;
+						visibility: visible;
+						height: 100%;
+						z-index:99;
+					}
+					.overlay.open li {
+						animation: fadeInRight .5s ease forwards;
+						animation-delay: .3s;
+					}
+					.overlay.open li:nth-of-type(2) {
+						animation-delay: .4s;
+					}
+					.overlay.open li:nth-of-type(3) {
+						animation-delay: .5s;
+					}
+					.overlay.open li:nth-of-type(4) {
+						animation-delay: .6s;
+					}
+					.overlay.open li:nth-of-type(5) {
+						animation-delay: .7s;
+					}
+					.overlay nav {
+						position: relative;
+						height: 60%;
+						top: 50%;
+						transform: translateY(-50%);
+						font-size: 3rem;
+						font-weight: 600;
+						text-align: center;
+					}
+					.overlay ul {
+						list-style: none;
+						padding: 0;
+						margin: 0 auto;
+						display: inline-block;
+						position: relative;
+						height: 100%;
+					}
+					.overlay ul li {
+						display: block;
+						height: 25%;
+						height: calc(100% / 4);
+						min-height: 50px;
+						position: relative;
+						opacity: 0;
+					}
+					.overlay ul li a {
+						display: block;
+						position: relative;
+						color: #FFF;
+						text-decoration: none;
+						overflow: hidden;
+					}
+					.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+						width: 100%;
+					}
+					.overlay ul li a:after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						width: 0%;
+						transform: translateX(-50%);
+						height: 3px;
+						background: #FFF;
+						transition: .35s;
+					}
+
+					@keyframes fadeInRight {
+					0% {
+						opacity: 0;
+						left: 20%;
+					}
+					100% {
+						opacity: 1;
+						left: 0;
+					}
+					}
+					/* About-our-history
+					==================*/
+					.about-our-history{
+						padding-bottom: 12rem;
+					}
+					.about-our-history-title{
+						padding: 6.5rem 0 0 0;
+					}
+					.about-our-history-under-title {
+						padding:  1.8rem 0 6rem 0;
+					}
+					.text-3{
+						margin-top: 1.8rem;
+					}
+					
+					/* Icon
+					===============*/
+					.icon-section-title{
+						font-size:1.2rem;
+						font-weight: 600;
+						letter-spacing: 6px;
+						padding:9rem 0 0 0;
+					}
+					.icon-section-sub-title{
+						color: #777;
+						padding: 1.8rem 0 0 0;
+						font-size: 0.9rem;
+						letter-spacing: 4px;
+					}
+					.icon-text-wrapper{
+						padding: 1rem 0 0 0;
+						}
+					.icon-wrapper{
+						padding: 6rem 0 0 0 ;
+					}
+					.icon-text-paragraph{
+						padding: 0 0 0 2.4rem;
+					}
+					.icon-title{
+						font-weight: 600;
+						letter-spacing: 2px;
+					}
+					.icon-text{
+						padding: 0.8rem 0 0 0;	
+						color: #777;
+						line-height: 1.8;
+					}
+						/* Clients say
+					===============*/
+					.clients-say-container .clients-say-head-title{
+						font-size: 2rem;
+						padding: 6rem 0 2rem 0;
+						letter-spacing: 2px;
+					}
+					.clients-say-container .clients-say-wrapper{
+						padding-top: 2.5rem;
+					}
+					.clients-say-container .clients-say-person{
+						letter-spacing: 1px;
+						font-weight: 600;
+					}
+					.clients-say-container .clients-say-profession{
+						font-size: 0.85rem;
+					}
+					.clients-say-container .clients-say-text{
+						font-style: italic;
+						line-height: 1.65;
+					}
+				
+			}
+
+			@media only screen and (max-width:767px){
+					.service-title{
+						font-size: 1.2rem;
+					}
+					.history-showcase .history-showcase-img {
+						min-height: 30rem;
+					}
+					.history-showcase-text-part{
+						padding: 2.4rem 2rem;
+					}
+					.footer-title{
+						font-size:1rem;
+					}
+					.footer-text{
+						font-size: 0.9rem;
+					}
+					.footer-bottom{
+						font-size: 0.9rem;
+					}
+			}
+			@media only screen and (max-width:600px)
+			{
+					.menu ul li {
+						font-size:2.2rem;				
+					}
+					.history-showcase .history-showcase-img {
+						min-height: 22rem;
+					}
+					.icon-second-paragraph{
+						padding: 2rem 0 12rem 0;
+					}
+					.icon-section-title{
+						padding-top: 8rem;	
+					}
+					.icon-section-sub-title{
+					
+					}
+					.icon-text-wrapper{
+						padding: 1rem 0 0 0;
+						}
+					.icon-wrapper{
+						padding: 4rem 1rem 0 1rem ;
+					}
+					.icon-text-paragraph{
+						padding: 0 0 0 1rem;
+					}
+					.icon-title{
+						font-weight: 600;
+						letter-spacing: 3px;
+					}
+					.icon-text{
+						padding: 0.8rem 0 0 0;	
+						color: #777;
+						letter-spacing: 1px;
+						font-size: 0.95rem;
+						line-height: 1.7;
+					}
+					.geometric-background-title{
+						font-size: 1rem;
+						letter-spacing: 4px;	
+						padding-bottom: 6.5vh;
+					}
+					.geometric-background-button{
+						font-size: 1rem;
+						padding: 0.5rem;
+						width: 15rem;
+					}
+					.footer-body{
+						text-align:center;
+					}
+					.footer-column{
+						padding: 1.5rem 0 1.5rem 0;
+					}
+					.footer-logo{
+						width: 100%;
+					}
+					.footer-link{
+						width: 33.333%;
+					}
+			}
+			@media only screen and (max-width:572px){
+				.about-our-history-wrapper{
+					margin:auto;
+				}
+					.about-our-history{
+						padding-bottom: 12rem;
+					}
+					.about-our-history-title{
+						padding: 6.5rem 0 0 0;
+					}
+					.about-our-history-under-title {
+						padding:  1rem 0 5rem 0;
+					}
+				.about-our-history-text blockquote{
+					font-size: 1rem;
+				}
+				.about-our-history-text{
+					font-size: 0.9rem;
+				}
+			}
+			@media only screen and (max-width:478px){
+					.history-showcase .history-showcase-img {
+						min-height: 16rem;
+					}
+										.button_container {
+						height: 22px;
+						width: 30px;
+					}	
+					.button_container span {	
+						height: 4px;
+					}
+				.footer-title{
+					font-size:0.9rem;
+				}
+				.footer-text{
+					font-size: 0.8rem;
+				}
+				.footer-bottom{
+					font-size: 0.8rem;
+				}
+			}
